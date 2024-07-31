@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Accessories</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="logo"
+        ><img src="img/logo.png" alt="Logo"
+      /></a>
+      <div class="navbar-nav">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#tujuan">Tujuan</a>
+        <a href="index.html#product">Produk</a>
+        <a href="index.html#kategori">Kategori</a>
+        <a href="index.html#tahapan">Tahapan</a>
+        <a href="index.html#contact">Kontak</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="index.html#login" id="login"></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end-->
+
+    <!-- Register Section -->
+    <section id="register-section" class="auth-section">
+      <div class="register auth-container">
+        <h2>Pendaftaran Untuk Kompetisi Inovasi</h2>
+
+        <!-- Personal Information -->
+        <div class="input-group">
+          <label for="register-name">Nama Lengkap</label>
+          <input type="text" id="register-name" class="auth-input" required />
+        </div>
+        <div class="input-group">
+          <label for="register-email">Email</label>
+          <input type="email" id="register-email" class="auth-input" required />
+        </div>
+        <div class="input-group">
+          <label for="register-phone">No Telepon</label>
+          <input type="text" id="register-phone" class="auth-input" required />
+        </div>
+        <div class="input-group">
+          <label for="register-address">Alamat</label>
+          <input
+            type="text"
+            id="register-address"
+            class="auth-input"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="register-dob">Tanggal Lahir</label>
+          <input type="date" id="register-dob" class="auth-input" required />
+        </div>
+        <div class="input-group">
+          <label for="register-gender">Jenis Kelamin</label>
+          <select id="register-gender" class="auth-input" required>
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </div>
+
+        <!-- Academic or Professional Information -->
+        <div class="input-group">
+          <label for="register-institution">Lembaga/Perusahaan</label>
+          <input
+            type="text"
+            id="register-institution"
+            class="auth-input"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="register-role">Program Studi/Jabatan</label>
+          <input type="text" id="register-role" class="auth-input" required />
+        </div>
+        <div class="input-group">
+          <label for="register-experience">Tahun Masuk/Pengalaman</label>
+          <input
+            type="text"
+            id="register-experience"
+            class="auth-input"
+            required
+          />
+        </div>
+
+        <!-- Innovation Information -->
+        <div class="input-group">
+          <label for="innovation-title">Judul Inovasi</label>
+          <input
+            type="text"
+            id="innovation-title"
+            class="auth-input"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="innovation-description">Deskripsi Inovasi</label>
+          <textarea
+            id="innovation-description"
+            class="auth-input"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div class="input-group">
+          <label for="innovation-category">Kategori Inovasi</label>
+          <select id="innovation-category" class="auth-input" required>
+            <option value="Smart Branding">SMART BRANDING</option>
+            <option value="Smart Governance">SMART GOVERNANCE</option>
+            <option value="Smart Environment">SMART ENVIRONMENT</option>
+            <option value="Smart Living">SMART LIVING</option>
+            <option value="Smart Society">SMART SOCIETY</option>
+            <option value="Smart Economy">SMART ECONOMY</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="innovation-file"
+            >File Pendukung (Proposal, Presentasi, dll.)</label
+          >
+          <input type="file" id="innovation-file" class="auth-input" required />
+        </div>
+
+        <!-- Team Information (Optional) -->
+        <div class="input-group">
+          <label for="team-members">Anggota Tim (jika ada)</label>
+          <input
+            type="text"
+            id="team-members"
+            class="auth-input"
+            placeholder="Name of Team Members"
+          />
+        </div>
+
+        <!-- Agreement -->
+        <div class="input-group">
+          <label>
+            <input type="checkbox" id="agree-terms" required /> Saya setuju
+            dengan syarat dan ketentuan
+          </label>
+        </div>
+
+        <div class="input-group">
+          <button onclick="register()" class="auth-button">Daftar</button>
+        </div>
+        <p>Sudah punya akun? <a href="login.html">Login disini</a></p>
+      </div>
+    </section>
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/aproces.id?igsh=bGNpcDY0bXFnb3Zi"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="credit">
+        <p>&copy; 2024 Kompetisi Inovasi Kota Palembang. Semua hak cipta dilindungi.</p>
+        <p>Website ini adalah bagian dari kompetisi dan bukan situs resmi Bappeda Litbang Palembang.</p>
+        <p>Untuk informasi resmi, silakan kunjungi <a href="https://bappeda.palembang.go.id" target="_blank">situs resmi Bappeda Litbang Palembang</a>.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+    <script>
+      // JavaScript for form validation and handling
+      function register() {
+        const name = document.getElementById("register-name").value;
+        const email = document.getElementById("register-email").value;
+        const phone = document.getElementById("register-phone").value;
+        const address = document.getElementById("register-address").value;
+        const dob = document.getElementById("register-dob").value;
+        const gender = document.getElementById("register-gender").value;
+        const institution = document.getElementById(
+          "register-institution"
+        ).value;
+        const role = document.getElementById("register-role").value;
+        const experience = document.getElementById("register-experience").value;
+        const innovationTitle =
+          document.getElementById("innovation-title").value;
+        const innovationDescription = document.getElementById(
+          "innovation-description"
+        ).value;
+        const innovationCategory = document.getElementById(
+          "innovation-category"
+        ).value;
+        const teamMembers = document.getElementById("team-members").value;
+        const agreeTerms = document.getElementById("agree-terms").checked;
+
+        // Simple validation
+        if (
+          !name ||
+          !email ||
+          !phone ||
+          !address ||
+          !dob ||
+          !gender ||
+          !institution ||
+          !role ||
+          !experience ||
+          !innovationTitle ||
+          !innovationDescription ||
+          !innovationCategory ||
+          !agreeTerms
+        ) {
+          alert("Please fill in all required fields");
+          return;
+        }
+
+        // Handle registration (e.g., send data to server)
+        alert("Registration successful!");
+
+        // Clear the form after successful registration
+        document.getElementById("register-name").value = "";
+        document.getElementById("register-email").value = "";
+        document.getElementById("register-phone").value = "";
+        document.getElementById("register-address").value = "";
+        document.getElementById("register-dob").value = "";
+        document.getElementById("register-gender").value = "";
+        document.getElementById("register-institution").value = "";
+        document.getElementById("register-role").value = "";
+        document.getElementById("register-experience").value = "";
+        document.getElementById("innovation-title").value = "";
+        document.getElementById("innovation-description").value = "";
+        document.getElementById("innovation-category").value = "";
+        document.getElementById("team-members").value = "";
+        document.getElementById("agree-terms").checked = false;
+      }
+
+      // Function to toggle password visibility
+      function togglePassword() {
+        const passwordInput = document.getElementById("register-password");
+        const toggleIcon = document.querySelector(".toggle-password");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          toggleIcon.classList.remove("fa-eye");
+          toggleIcon.classList.add("fa-eye-slash");
+        } else {
+          passwordInput.type = "password";
+          toggleIcon.classList.remove("fa-eye-slash");
+          toggleIcon.classList.add("fa-eye");
+        }
+      }
+    </script>
+  </body>
+</html>
